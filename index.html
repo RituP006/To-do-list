@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO do list</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cf41e93b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="toggle">
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label">
+        <div class="ball"></div>
+      </label>
+    </div>
+    <div class="container">
+      <header id="header">
+        <div id="header-content">
+          <div class="card">
+            <div class="card-circle">
+              <h1 id="date"></h1>
+            </div>
+          </div>
+          <div class="clear">
+            <i class="fas fa-sync-alt fa-2x"></i>
+          </div>
+        </div>
+      </header>
+      <div class="list">
+        <ul class="list-content"></ul>
+      </div>
+
+      <div class="input-field">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+
+        <input type="text" class="input-text" placeholder="add to do list" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
