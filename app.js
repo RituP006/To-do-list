@@ -6,7 +6,7 @@ const clear = document.querySelector(".clear");
 // ----------------------toggle-------------------
 let darkmode = localStorage.getItem("darkmode");
 // let checkstatus = localStorage.getItem("checkbox");
-console.log("after refresh", darkmode);
+
 const darkmodetoggle = document.querySelector(".checkbox");
 
 // set darkmode
@@ -80,7 +80,7 @@ function loadeventlisteners() {
     .querySelector(".input-field")
     .addEventListener("click", function (e) {
       if (e.target.className == "fa fa-plus") {
-        additem();
+        additem(e);
       }
     });
 
@@ -147,7 +147,7 @@ function gettask() {
 }
 
 //----------------------------------- add item function
-function additem(e) {
+function additem(e, id, done) {
   if (input.value == "") {
     alert("enter to-do item");
   }
@@ -187,7 +187,7 @@ function additem(e) {
   }
 
   // stire in local storage
-  storetask(input.value);
+  storetask(input.value, id);
   // clear input
   input.value = "";
 }
@@ -227,11 +227,7 @@ function deletetaskfromls(item) {
   }
 
   tasks.forEach(function (task, index) {
-    console.log(task);
-    console.log(item.textContent);
-
     if (item.textContent === task) {
-      console.log(tasks);
       tasks.splice(index, 1);
     }
   });
@@ -244,6 +240,7 @@ function deletetaskfromls(item) {
 function taskdone(e) {
   if (e.target.parentElement.classList.contains("checked")) {
     e.target.parentElement.nextElementSibling.className = "strike-text";
+
     e.target.className = "fas fa-check-circle";
   }
 

@@ -114,10 +114,11 @@ ul li {
     margin-bottom: 0.2rem;
 
     #header-content {
+      text-align: center;
       h1 {
-        position: absolute;
+        margin: 0 auto;
         margin-top: 10%;
-        left: 3rem;
+
         color: rgb(211, 222, 233);
       }
 
@@ -199,5 +200,21 @@ ul li {
 
   .fa.fa-plus:hover {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    #header {
+      .fa.fa-plus:hover {
+        opacity: 1;
+      }
+    }
+
+    .list {
+      .fas.fa-check-circle:hover {
+        background-color: black;
+      }
+    }
   }
 }

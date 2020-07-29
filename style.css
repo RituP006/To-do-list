@@ -133,10 +133,13 @@ ul li {
   margin-bottom: 0.2rem;
 }
 
+.container #header #header-content {
+  text-align: center;
+}
+
 .container #header #header-content h1 {
-  position: absolute;
+  margin: 0 auto;
   margin-top: 10%;
-  left: 3rem;
   color: #d3dee9;
 }
 
@@ -222,5 +225,14 @@ ul li {
 
 .input-field .fa.fa-plus:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .container #header .fa.fa-plus:hover {
+    opacity: 1;
+  }
+  .container .list .fas.fa-check-circle:hover {
+    background-color: black;
+  }
 }
 /*# sourceMappingURL=style.css.map */
