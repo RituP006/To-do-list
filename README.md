@@ -4,9 +4,9 @@ It is a simple to-do list, made using javascript which allows you to add task, m
 Your task get stored in local storage which stores the list untill you manually delete it.
 You can use the toggle to switch to light or dark mode.
 
-<img src="img/IMG-20200729-WA0008.jpg" width=250px height=400px>
+<img src="img/IMG-20200729-WA0008.jpg" width=250px height=450px>
 
-<img src="img/IMG-20200729-WA0009.jpg" width=250px height=400px>
+<img src="img/IMG-20200729-WA0009.jpg" width=250px height=450px>
 
 It can be easily accessed using the link:
 https://gracious-heyrovsky-38c1ea.netlify.app/
