@@ -9,7 +9,7 @@ You can use the toggle to switch to light or dark mode.
 <img src="img/Light-ss.jpg" width=250px height=450px>
 
 It can be easily accessed using the link:
-https://gracious-heyrovsky-38c1ea.netlify.app/
+https://to-do-list-webapplication.netlify.app/
 
 
 
